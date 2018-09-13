@@ -1,6 +1,6 @@
 $teal: #1ECD97;
 
-.wrap {
+.wrapxxx {
   position: absolute;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@ $teal: #1ECD97;
   margin: auto;
 }
 
-.button {
+.buttonxxx {
   background-color: transparent;
   border: 2px solid $teal;
   border-radius: 4px;
