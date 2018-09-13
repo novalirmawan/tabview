@@ -137,8 +137,7 @@
 }
 
 .timeline{
-  --timelineMainColor: #4557bb;
-  font-size: 16px;
+  --timelineMainColor: #1B4F72;
 }
 
 @media screen and (max-width: 360px){
