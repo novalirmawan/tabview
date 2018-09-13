@@ -1,96 +1,56 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-$timing        : 265ms;
-$iconColor     : #ff003c;
-$accent        : #c648c8;
-$grape         : #7b00e0;
-$orchid        : #ae31d9;
-
-@mixin transformScale($size: 1) {
-    transform: scale($size);
-    -ms-transform: scale($size);
-    -webkit-transform: scale($size);
+* {
+  box-sizing: border-box;
 }
-
-body {
-    background-color: rgba($iconColor, 0.05);
+[data-social] {
+  margin: 1em auto;
 }
-
-.social-container {
-    width: 400px;
-    margin: 40vh auto;
-    text-align: center;
+[data-social]:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 1em;
-  
-    li {
-        display: inline-block;
-        margin: 0.15em;
-        position: relative;
-        font-size: 1.2em;
-
-    }
-
-    i {
-        color: #fff;
-        position: absolute;
-        top: 21px;
-        left: 21px;
-        transition: all $timing ease-out;
-    }
-
-    a {
-        display: inline-block;
-      
-        &:before {
-            @include transformScale();
-            content: " ";
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            display: block;
-            background: linear-gradient(45deg, $iconColor, $accent);
-            transition: all $timing ease-out;
-        }
-        
-        &:hover:before {
-            transform: scale(0);
-            transition: all $timing ease-in;
-        }
-        
-        &:hover i {
-            @include transformScale(2.2);
-            color: $iconColor;
-            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all $timing ease-in;
-        }
-    }
-  
-    a.social-square {
-      
-        &:before {
-            background: linear-gradient(45deg, $grape, $orchid);
-            border-radius: 10%;
-        }
-      
-        &:hover:before {
-            transform: rotate(-180deg);
-            -ms-transform: rotate(-180deg);
-            -webkit-transform: scale(-180deg);
-            border-radius: 100%;
-        }
-        
-        &:hover i {
-            @include transformScale(1.6);
-            color: #fff;
-            transform: scale(1.6);
-            -webkit-text-fill-color: #fff;
-        }
-    }
+[data-social] a {
+  display: inline-block;
+  font-family: sans-serif;
+  line-height: 1;
+  padding: .5em;
+  float: left;
+  color: white;
+  font-size: 20pt;
+  min-width: 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .2s ease-in-out;
+}
+[data-social] a:focus,
+[data-social] a:hover {
+  opacity: .7;
+}
+[data-social] a span {
+  margin-left: .5em;
+}
+[data-social] [class*=facebook] {
+  background: #3b5998;
+}
+[data-social] [class*=twitter] {
+  background: #2caae1;
+}
+[data-social] [class*=youtube] {
+  background: #cb2027;
+}
+[data-social] [class*=linkedin] {
+  background: #007bb6;
+}
+[data-social] a:nth-of-type(n+2) {
+  margin-left: .5em;
+}
+@element '[data-social] a' and (max-width: 15em) {
+  $this span {
+    display: none;
+  }
+}
+@element '[data-social] a' {
+  $this {
+    width: calc(eval('100 / parentNode.children.length')% - .5em + eval('.5 / parentNode.children.length')em);
+  }
 }
