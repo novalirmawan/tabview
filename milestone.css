@@ -144,14 +144,14 @@
 @media screen and (min-width: 768px){
 
   html{
-    font-size: 62.5%;
+    font-size: 100%;
   }
 }
 
 @media screen and (max-width: 767px){
 
   html{
-    font-size: 55%;
+    font-size: 100%;
   }
 }
 
@@ -162,14 +162,14 @@
 @media screen and (min-width: 768px){
 
   html{
-    font-size: 62.5%;
+    font-size: 100%;
   }
 }
 
 @media screen and (max-width: 767px){
 
   html{
-    font-size: 50%;
+    font-size: 100%;
   }
 }
 
