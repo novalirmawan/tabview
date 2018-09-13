@@ -52,7 +52,6 @@
   @include btn-border-drawing(#1B4F72, #FF5733, 4px, bottom, right);
 }
 
-//=== Button styling, semi-ignore
 .btn {
   background: none;
   border: none;
@@ -63,9 +62,4 @@
   letter-spacing: 0.05rem;
   
   &:focus { outline: 2px dotted #55d7dc; }
-}
-body { 
-  display: flex; 
-  justify-content: center;
-  min-height: 100vh;
 }
