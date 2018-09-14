@@ -1,13 +1,13 @@
 a.button1{
  display:inline-block;
- padding:0.35em 1.2em;
+ padding:0.2em 0.6em;
  border:0.1em solid #1B4F72;
  margin:0 0.3em 0.3em 0;
  border-radius:0.12em;
  box-sizing: border-box;
  text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
+font-family:'Lato',sans-serif;
+ font-weight:200;
  color:#1B4F72;
  text-align:center;
  transition: all 0.2s;
@@ -18,27 +18,30 @@ a.button1:hover{
 }
 a.button2{
  display:inline-block;
- padding:0.35em 1.2em;
- border:0.1em solid #DC7633;
+ padding:0.2em 0.6em;
+ border:0.1em solid #1B4F72;
  margin:0 0.3em 0.3em 0;
  border-radius:0.12em;
  box-sizing: border-box;
  text-decoration:none;
- font-family:'Roboto',sans-serif;
+font-family:'Lato',sans-serif;
  font-weight:300;
- color:#DC7633;
+ color:#ffffff;
  text-align:center;
  transition: all 0.2s;
+ background-color:#1B4F72;
 }
 a.button2:hover{
- color:#ffffff;
- background-color:#DC7633;
+ color:#1B4F72;
+ background-color:#ffffff;
 }
 @media all and (max-width:30em){
  a.button1{
   display:block;
   margin:0.4em auto;
  }
+}
+@media all and (max-width:30em){
  a.button2{
   display:block;
   margin:0.4em auto;
