@@ -39,9 +39,6 @@ label[for*='2']:before { content: '\f15a'; }
 label[for*='3']:before { content: '\f0c0'; }
 label[for*='4']:before { content: '\f15d'; }
 label[for*='5']:before { content: '\f005'; }
-label[for*='11']:before { content: '\f096'; }
-label[for*='12']:before { content: '\f10a'; }
-label[for*='13']:before { content: '\f26c'; }
 
 label:hover {
   color: #888;
@@ -59,10 +56,7 @@ input:checked + label {
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4,
-#tab5:checked ~ #content5,
-#tab11:checked ~ #content11,
-#tab12:checked ~ #content12,
-#tab13:checked ~ #content13 {
+#tab5:checked ~ #content5 {
   display: block;
 }
 
